@@ -5,7 +5,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.align import Align
 import uroman as ur
-from langs import *
+from jazyk.langs import *
 import time 
 uroman = ur.Uroman()
 console = Console()
