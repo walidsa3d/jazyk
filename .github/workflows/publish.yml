@@ -20,11 +20,6 @@ jobs:
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
     
-    - name: Update version from tag
-      run: |
-        VERSION=${GITHUB_REF#refs/tags/v}
-        poetry version $VERSION
-    
     - name: Build and publish
       env:
         POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
